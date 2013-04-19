@@ -1,0 +1,30 @@
+{
+  "name": "harmonyjs-dependency-injection",
+  "description": "Manage services using dependency injection.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Sarah Ryan",
+    "email": "sarah@theartoflogic.com>"
+  },
+  "contributors": [
+    {
+      "name": "Sarah Ryan",
+      "email": "sarah@theartoflogic.com"
+    }
+  ],
+  "keywords": [
+    "harmony",
+    "harmonyjs",
+    "dependency",
+    "injection"
+  ],
+  "main": "lib/index",
+  "homepage": "http://harmonyjs.org",
+  "repository": "git://github.com/harmonyjs/dependency-injection",
+  "scripts": {
+    "test": "make test"
+  },
+  "engines": {
+    "node": ">=0.8.22"
+  }
+}

@@ -1,4 +1,4 @@
-dependency-injection
-====================
+Harmony.js - Dependency Injection
+=================================
 
-Dependency injection library for Node.js.
+This module uses dependency injection to manage services used across your application.
