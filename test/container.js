@@ -1,12 +1,12 @@
 var assert = require('assert');
-var di = require('../lib/index');
+var Container = require('../lib/index.js').Container;
 
 suite('Dependency Injection', function() {
 
     test('instantiate service container', function() {
 
         // Instantiate the service container
-        var container = di.container();
+        var container = new Container();
 
         // Do assertions
         assert.equal(typeof(container), 'object');
@@ -28,7 +28,7 @@ suite('Dependency Injection', function() {
         };
 
         // Instantiate the service container
-        var container = di.container(params);
+        var container = new Container(params);
 
         // Do assertions
         assert.equal(container.getParameter('test.value'), 'ok');
@@ -48,7 +48,7 @@ suite('Dependency Injection', function() {
         };
 
         // Instantiate the service container
-        var container = di.container(params);
+        var container = new Container(params);
 
         // Set the new value
         container.mergeParameters({ test2: { deep: { value: 'new value3' } } });
@@ -72,7 +72,7 @@ suite('Dependency Injection', function() {
         };
 
         // Instantiate the service container
-        var container = di.container(params);
+        var container = new Container(params);
 
         // Set the service
         container.set('test_service', {
@@ -111,7 +111,7 @@ suite('Dependency Injection', function() {
         };
 
         // Instantiate the service container
-        var container = di.container(params);
+        var container = new Container(params);
 
         // Set the service
         container.set('test_service', {
@@ -144,7 +144,7 @@ suite('Dependency Injection', function() {
         };
 
         // Instantiate the service container
-        var container = di.container(params);
+        var container = new Container(params);
 
         // Set the service
         container.set('test_service', {

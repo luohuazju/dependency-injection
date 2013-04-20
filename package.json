@@ -1,5 +1,5 @@
 {
-  "name": "harmonyjs-dependency-injection",
+  "name": "harmony-di",
   "description": "Manage services using dependency injection.",
   "version": "1.0.0",
   "author": {
